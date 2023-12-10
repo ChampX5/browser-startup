@@ -12,16 +12,10 @@ formatInput.addEventListener('change', () => {
     // check for checkbox
     if (formatInput.checked) {
         AM_PM.classList.remove('opacity-100');
-        AM_PM.classList.add('opacity-0');
-
-        AM_PM.classList.remove('w-full');
-        AM_PM.classList.add('w-0');
+        AM_PM.classList.add('opacity-0', 'pointer-events-none');
     } else {
-        AM_PM.classList.remove('opacity-0');
+        AM_PM.classList.remove('opacity-0', 'pointer-events-none');
         AM_PM.classList.add('opacity-100');
-
-        AM_PM.classList.remove('w-0');
-        AM_PM.classList.add('w-full');
     }
 });
 

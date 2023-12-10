@@ -90,13 +90,31 @@
                     src="https://www.google.com/favicon.ico"
                 />
             </div>
-            <input
-                type="text"
-                name="search"
-                id="main-search"
-                class="outline-none border-none w-full bg-[#2e2c35] rounded text-white text-xl p-4 font-[REM] placeholder:text-[#ffffff4d] placeholder:font-[REM]"
-                placeholder="search anything"
-            />
+            <div class="w-full flex">
+                <input
+                    type="text"
+                    name="search"
+                    id="main-search"
+                    class="h-12 outline-none border-none w-full bg-[#2e2c35] rounded-tl rounded-bl text-white text-xl p-4 font-[REM] placeholder:text-[#ffffff4d] placeholder:font-[REM]"
+                    placeholder="search anything"
+                />
+                <div
+                    class="w-20 bg-[#2e2c35] before:content-['URL'] before:text-[#ffffff9c] before:font-semibold before:flex before:justify-center before:items-center before:font-[Montserrat] relative before:absolute before:-left-1/2 before:top-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:bg-blue-950 before:rounded-lg before:py-1 before:px-2"
+                >
+                    <input
+                        type="checkbox"
+                        name="url-toggle"
+                        id="url-toggle"
+                        class="hover peer h-0 w-0 scale-0 opacity-0"
+                        checked
+                    />
+
+                    <label
+                        for="url-toggle"
+                        class="uppercase cursor-pointer text-white select-none relative font-[Montserrat] before:absolute before:-left-[0.625rem] before:top-[0.125rem] before:h-10 before:w-20 before:rounded-xl before:bg-slate-700 before:border-2 before:border-solid before:border-slate-800 after:absolute after:-left-[0.25rem] after:top-2 after:h-7 after:w-8 after:rounded-lg after:bg-red-500 after:transition-all after:duration-300 after:ease-in-out peer-checked:after:bg-green-500 peer-checked:after:left-0 peer-checked:after:translate-x-full"
+                    ></label>
+                </div>
+            </div>
         </div>
 
         <section style="height: 20px"></section>
@@ -277,32 +295,32 @@
             </div>
 
             <div
-                class="bg-gradient-to-r p-3 grid place-items-center grid-cols-2 transition-all duration-200 ease-in-out mx-auto justify-center items-center gap-x-5 rounded-3xl from-gray-950 via-slate-900 to-slate-900"
+                class="bg-gradient-to-r p-3 grid place-items-center grid-cols-2 transition-all duration-200 ease-in-out mx-auto justify-center items-center gap-x-5 rounded-3xl from-gray-900 via-slate-950 to-slate-950"
             >
                 <canvas id="clock"></canvas>
 
                 <div class="flex text-gray-500 text-7xl">
                     <span
                         id="hours"
-                        class="px-3 bg-gradient-to-b from-blue-400 to-blue-600 bg-clip-text text-transparent font-semibold text-7xl"
+                        class="w-20 mx-3 bg-gradient-to-b from-blue-400 to-blue-600 bg-clip-text text-transparent font-semibold text-7xl"
                         >08</span
                     >:
                     <span
                         id="minutes"
-                        class="px-3 bg-gradient-to-b from-orange-400 to-orange-600 bg-clip-text text-transparent font-semibold text-7xl"
+                        class="w-20 mx-3 bg-gradient-to-b from-orange-400 to-orange-600 bg-clip-text text-transparent font-semibold text-7xl"
                         >35</span
                     >:
                     <span
                         id="seconds"
-                        class="px-3 bg-gradient-to-b from-pink-400 to-pink-600 bg-clip-text text-transparent font-semibold text-7xl"
+                        class="w-20 mx-3 bg-gradient-to-b from-pink-400 to-pink-600 bg-clip-text text-transparent font-semibold text-7xl"
                         >23</span
                     ><span
                         id="am_pm"
-                        class="transition-all duration-200 ease-in-out px-3 bg-gradient-to-b from-emerald-400 to-emerald-600 bg-clip-text text-transparent font-semibold text-7xl"
+                        class="transition-all duration-200 ease-in-out w-max px-3 bg-gradient-to-b from-emerald-400 to-emerald-600 bg-clip-text text-transparent font-semibold text-7xl"
                         >PM</span
                     >
                 </div>
-            </>
+            </div>
         </div>
 
         <script src="js/clock.js" defer></script>
