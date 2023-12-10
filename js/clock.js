@@ -8,6 +8,16 @@ minutesElement = document.getElementById('minutes');
 secondsElement = document.getElementById('seconds');
 AM_PM = document.getElementById('am_pm');
 
+// check for checkbox
+if (formatInput.checked) {
+    AM_PM.classList.remove('opacity-100');
+    AM_PM.classList.add('opacity-0', 'pointer-events-none');
+} else {
+    AM_PM.classList.remove('opacity-0', 'pointer-events-none');
+    AM_PM.classList.add('opacity-100');
+}
+// automatically adapts to default state
+
 formatInput.addEventListener('change', () => {
     // check for checkbox
     if (formatInput.checked) {
