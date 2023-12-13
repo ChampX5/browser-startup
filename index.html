@@ -22,7 +22,7 @@
         <script src="https://cdn.tailwindcss.com/"></script>
     </head>
 
-    <body class="bg-[#1c1c1c] p-12 overflow-hidden">
+    <body class="bg-[#1c1c1c] p-12">
         <div class="grid place-items-center grid-cols-2 w-full">
             <a
                 target="_blank"
@@ -80,200 +80,200 @@
         <section style="height: 20px"></section>
 
         <div
-            class="h-12 flex gap-1 justify-stretch rounded-xl overflow-hidden w-4/5 mx-auto"
+            class="flex flex-col gap-y-1 rounded-xl overflow-hidden w-4/5 mx-auto"
         >
-            <div
-                class="aspect-square grid rounded place-items-center bg-[#2e2c35]"
-            >
-                <img
-                    class="w-6 aspect-square"
-                    src="https://www.google.com/favicon.ico"
-                />
-            </div>
-            <div class="w-full flex">
-                <input
-                    type="text"
-                    name="search"
-                    id="main-search"
-                    class="h-12 outline-none border-none w-full bg-[#2e2c35] rounded-tl rounded-bl text-white text-xl p-4 font-[REM] placeholder:text-[#ffffff4d] placeholder:font-[REM]"
-                    placeholder="search anything"
-                />
+            <div class="h-12 flex gap-1 justify-stretch overflow-hidden">
                 <div
-                    class="w-20 bg-[#2e2c35] before:content-['URL'] before:text-[#ffffff9c] before:font-semibold before:flex before:justify-center before:items-center before:font-[Montserrat] relative before:absolute before:-left-1/2 before:top-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:bg-blue-950 before:rounded-lg before:py-1 before:px-2"
+                    class="aspect-square grid rounded place-items-center bg-[#2e2c35]"
                 >
+                    <img
+                        class="w-6 aspect-square"
+                        src="https://www.google.com/favicon.ico"
+                    />
+                </div>
+                <div class="w-full flex">
                     <input
-                        type="checkbox"
-                        name="url-toggle"
-                        id="url-toggle"
-                        class="hover peer h-0 w-0 scale-0 opacity-0"
-                        checked
+                        type="text"
+                        name="search"
+                        id="main-search"
+                        class="h-12 outline-none border-none w-full bg-[#2e2c35] rounded-tl rounded-bl text-white text-xl p-4 font-[REM] placeholder:text-[#ffffff4d] placeholder:font-[REM]"
+                        placeholder="search anything"
                     />
+                    <div
+                        class="w-20 bg-[#2e2c35] rounded-br rounded-tr before:content-['URL'] before:text-[#ffffff9c] before:font-semibold before:flex before:justify-center before:items-center before:font-[Montserrat] relative before:absolute before:-left-1/2 before:top-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:bg-blue-950 before:rounded-lg before:py-1 before:px-2"
+                    >
+                        <input
+                            type="checkbox"
+                            name="url-toggle"
+                            id="url-toggle"
+                            class="hover peer h-0 w-0 scale-0 opacity-0"
+                            checked
+                        />
 
-                    <label
-                        for="url-toggle"
-                        class="uppercase cursor-pointer text-white select-none relative font-[Montserrat] before:absolute before:-left-[0.625rem] before:top-[0.125rem] before:h-10 before:w-20 before:rounded-xl before:bg-slate-700 before:border-2 before:border-solid before:border-slate-800 after:absolute after:-left-[0.25rem] after:top-2 after:h-7 after:w-8 after:rounded-lg after:bg-red-500 after:transition-all after:duration-300 after:ease-in-out peer-checked:after:bg-green-500 peer-checked:after:left-0 peer-checked:after:translate-x-full"
-                    ></label>
+                        <label
+                            for="url-toggle"
+                            class="uppercase cursor-pointer text-white select-none relative font-[Montserrat] before:absolute before:-left-[0.625rem] before:top-[0.0625rem] before:h-10 before:w-20 before:rounded-xl before:bg-slate-700 before:border-2 before:border-solid before:border-slate-800 after:absolute after:-left-[0.25rem] after:top-[7px] after:h-7 after:w-8 after:rounded-lg after:bg-red-500 after:transition-all after:duration-300 after:ease-in-out peer-checked:after:bg-green-500 peer-checked:after:left-0 peer-checked:after:translate-x-full"
+                        ></label>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <section style="height: 20px"></section>
-
-        <div
-            class="grid m-auto gap-1 grid-cols-4 w-4/5 text-white font-[REM] rounded-2xl overflow-hidden"
-        >
-            <a
-                target="_blank"
-                class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
-                href="https://web.whatsapp.com"
+            <div
+                class="grid gap-1 grid-cols-4 text-white font-[REM]"
             >
-                <div
-                    class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                <a
+                    target="_blank"
+                    class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
+                    href="https://web.whatsapp.com"
                 >
-                    <img
-                        class="w-10 aspect-square rounded-xl"
-                        src="./img/whatsapp.png"
-                    />
-                </div>
+                    <div
+                        class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                    >
+                        <img
+                            class="w-10 aspect-square rounded-xl"
+                            src="./img/whatsapp.png"
+                        />
+                    </div>
 
-                <div>
-                    <div>Whatsapp Web</div>
-                    <div class="text-[#ffffff49]">web.whatsapp.com</div>
-                </div>
-            </a>
-            <a
-                target="_blank"
-                class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
-                href="https://www.youtube.com/"
-            >
-                <div
-                    class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                    <div>
+                        <div>Whatsapp Web</div>
+                        <div class="text-[#ffffff49]">web.whatsapp.com</div>
+                    </div>
+                </a>
+                <a
+                    target="_blank"
+                    class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
+                    href="https://www.youtube.com/"
                 >
-                    <img
-                        class="w-10 aspect-square rounded-xl"
-                        src="./img/yt.png"
-                    />
-                </div>
+                    <div
+                        class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                    >
+                        <img
+                            class="w-10 aspect-square rounded-xl"
+                            src="./img/yt.png"
+                        />
+                    </div>
 
-                <div>
-                    <div>YouTube</div>
-                    <div class="text-[#ffffff49]">youtube.com</div>
-                </div>
-            </a>
-            <a
-                target="_blank"
-                class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
-                href="https://www.discord.com/app"
-            >
-                <div
-                    class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                    <div>
+                        <div>YouTube</div>
+                        <div class="text-[#ffffff49]">youtube.com</div>
+                    </div>
+                </a>
+                <a
+                    target="_blank"
+                    class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
+                    href="https://www.discord.com/app"
                 >
-                    <img
-                        class="w-10 aspect-square rounded-xl"
-                        src="./img/discord.png"
-                    />
-                </div>
+                    <div
+                        class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                    >
+                        <img
+                            class="w-10 aspect-square rounded-xl"
+                            src="./img/discord.png"
+                        />
+                    </div>
 
-                <div>
-                    <div>Discord</div>
-                    <div class="text-[#ffffff49]">discord.com/app</div>
-                </div>
-            </a>
-            <a
-                target="_blank"
-                class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
-                href="https://www.github.com/"
-            >
-                <div
-                    class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                    <div>
+                        <div>Discord</div>
+                        <div class="text-[#ffffff49]">discord.com/app</div>
+                    </div>
+                </a>
+                <a
+                    target="_blank"
+                    class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
+                    href="https://www.github.com/"
                 >
-                    <img
-                        class="w-10 aspect-square rounded-xl"
-                        src="https://github.com/apple-touch-icon.png"
-                    />
-                </div>
+                    <div
+                        class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                    >
+                        <img
+                            class="w-10 aspect-square rounded-xl"
+                            src="https://github.com/apple-touch-icon.png"
+                        />
+                    </div>
 
-                <div>
-                    <div>GitHub</div>
-                    <div class="text-[#ffffff49]">github.com</div>
-                </div>
-            </a>
-            <a
-                target="_blank"
-                class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
-                href="https://www.codepen.io"
-            >
-                <div
-                    class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                    <div>
+                        <div>GitHub</div>
+                        <div class="text-[#ffffff49]">github.com</div>
+                    </div>
+                </a>
+                <a
+                    target="_blank"
+                    class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
+                    href="https://www.codepen.io"
                 >
-                    <img
-                        class="w-10 aspect-square rounded-xl"
-                        src="./img/codepen.png"
-                    />
-                </div>
+                    <div
+                        class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                    >
+                        <img
+                            class="w-10 aspect-square rounded-xl"
+                            src="./img/codepen.png"
+                        />
+                    </div>
 
-                <div>
-                    <div>CodePen</div>
-                    <div class="text-[#ffffff49]">codepen.io</div>
-                </div>
-            </a>
-            <a
-                target="_blank"
-                class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
-                href="https://www.gmail.com/"
-            >
-                <div
-                    class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                    <div>
+                        <div>CodePen</div>
+                        <div class="text-[#ffffff49]">codepen.io</div>
+                    </div>
+                </a>
+                <a
+                    target="_blank"
+                    class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
+                    href="https://www.gmail.com/"
                 >
-                    <img
-                        class="w-10 aspect-square rounded-xl"
-                        src="https://www.gstatic.com/images/branding/product/2x/gmail_2020q4_512dp.png"
-                    />
-                </div>
+                    <div
+                        class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                    >
+                        <img
+                            class="w-10 aspect-square rounded-xl"
+                            src="https://www.gstatic.com/images/branding/product/2x/gmail_2020q4_512dp.png"
+                        />
+                    </div>
 
-                <div>
-                    <div>GMail</div>
-                    <div class="text-[#ffffff49]">gmail.com</div>
-                </div>
-            </a>
-            <a
-                target="_blank"
-                class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
-                href="https://open.spotify.com/"
-            >
-                <div
-                    class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                    <div>
+                        <div>GMail</div>
+                        <div class="text-[#ffffff49]">gmail.com</div>
+                    </div>
+                </a>
+                <a
+                    target="_blank"
+                    class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
+                    href="https://open.spotify.com/"
                 >
-                    <img
-                        class="w-10 aspect-square rounded-xl"
-                        src="https://open.spotify.com/favicon.ico"
-                    />
-                </div>
+                    <div
+                        class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                    >
+                        <img
+                            class="w-10 aspect-square rounded-xl"
+                            src="https://open.spotify.com/favicon.ico"
+                        />
+                    </div>
 
-                <div>
-                    <div>Spotify</div>
-                    <div class="text-[#ffffff49]">open.spotify.com</div>
-                </div>
-            </a>
-            <a
-                target="_blank"
-                class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
-                href="https://www.notion.so/"
-            >
-                <div
-                    class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                    <div>
+                        <div>Spotify</div>
+                        <div class="text-[#ffffff49]">open.spotify.com</div>
+                    </div>
+                </a>
+                <a
+                    target="_blank"
+                    class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
+                    href="https://www.notion.so/"
                 >
-                    <img
-                        class="w-10 aspect-square rounded-xl"
-                        src="https://www.notion.so/front-static/logo-ios.png"
-                    />
-                </div>
+                    <div
+                        class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                    >
+                        <img
+                            class="w-10 aspect-square rounded-xl"
+                            src="https://www.notion.so/front-static/logo-ios.png"
+                        />
+                    </div>
 
-                <div>
-                    <div>Notion</div>
-                    <div class="text-[#ffffff49]">notion.so</div>
-                </div>
-            </a>
+                    <div>
+                        <div>Notion</div>
+                        <div class="text-[#ffffff49]">notion.so</div>
+                    </div>
+                </a>
+            </div>
         </div>
 
         <section style="height: 20px"></section>
@@ -285,7 +285,6 @@
                     name="24hr-toggle"
                     id="24hr-toggle"
                     class="hover peer h-0 w-0 scale-0 opacity-0"
-                    checked
                 />
 
                 <label
@@ -296,11 +295,11 @@
             </div>
 
             <div
-                class="bg-gradient-to-r p-3 grid place-items-center grid-cols-2 transition-all duration-200 ease-in-out mx-auto justify-center items-center gap-x-5 rounded-3xl from-gray-900 via-slate-950 to-slate-950"
+                class="px-10 py-3 border-solid border-2 border-gray-700 w-fit grid place-items-center grid-cols-9 transition-all duration-200 ease-in-out mx-auto justify-center items-center gap-x-5 rounded-3xl bg-slate-950"
             >
-                <canvas id="clock"></canvas>
+                <canvas id="clock" class="col-span-3"></canvas>
 
-                <div class="flex text-gray-500 text-7xl">
+                <div class="flex text-gray-500 text-7xl col-span-6">
                     <span
                         id="hours"
                         class="w-20 mx-3 bg-gradient-to-b from-blue-400 to-blue-600 bg-clip-text text-transparent font-semibold text-7xl"
