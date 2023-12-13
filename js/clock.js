@@ -79,6 +79,8 @@ function update() {
     const date = new Date();
     updateClock(date);
     updateTime(date);
+
+    requestAnimationFrame(update);
 }
 
 function updateClock(date) {
@@ -176,4 +178,3 @@ function updateTime(date) {
 }
 
 update();
-setInterval(update, 1000 / 120);
