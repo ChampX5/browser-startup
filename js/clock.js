@@ -27,6 +27,9 @@ formatInput.addEventListener('change', () => {
         AM_PM.classList.remove('opacity-0', 'pointer-events-none');
         AM_PM.classList.add('opacity-100');
     }
+
+    hoursElement.classList.toggle('before:-translate-y-20');
+    hoursElement.classList.toggle('after:translate-y-20');
 });
 
 function reset() {
@@ -159,20 +162,22 @@ function updateClock(date) {
 }
 
 function updateTime(date) {
-    let temporaryHours = date.getHours();
-    hours = formatInput.checked ? temporaryHours : temporaryHours > 12 ? temporaryHours - 12 : temporaryHours;
+    let hours24 = date.getHours();
+    let hours12 = hours24 > 12 ? hours24 - 12 : hours24 === 0 ? 12 : hours24;
 
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
 
     // make it two digits
-    if (hours < 10) hours = `0${hours}`;
+    if (hours12 < 10) hours12 = `0${hours12}`;
+    if (hours24 < 10) hours24 = `0${hours24}`;
     if (minutes < 10) minutes = `0${minutes}`;
     if (seconds < 10) seconds = `0${seconds}`;
 
-    AM_PM.innerHTML = temporaryHours > 12 ? "PM" : "AM";
+    AM_PM.innerHTML = hours24 > 12 ? 'PM' : 'AM';
 
-    hoursElement.innerHTML = hours;
+    hoursElement.setAttribute('data-hour-24', hours24.toString());
+    hoursElement.setAttribute('data-hour-12', hours12.toString());
     minutesElement.innerHTML = minutes;
     secondsElement.innerHTML = seconds;
 }

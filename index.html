@@ -20,14 +20,31 @@
         />
 
         <script src="https://cdn.tailwindcss.com/"></script>
+
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            'border-grey': '#393939',
+                            'light-grey': '#2e2c35',
+                            'light-grey-hover': '#393642',
+                            grey: '#1c1c1c',
+                            secondary: '#ffffff49',
+                            primary: '#ffffff'
+                        }
+                    }
+                }
+            };
+        </script>
     </head>
 
-    <body class="bg-[#1c1c1c] p-12">
+    <body class="bg-grey p-12">
         <div class="grid place-items-center grid-cols-2 w-full">
             <a
                 target="_blank"
                 href="https://www.chess.com"
-                class="group border-2 border-solid border-[#393939] p-2 rounded-2xl flex justify-center items-center relative overflow-hidden"
+                class="group border-2 border-solid border-border-grey p-2 rounded-2xl flex justify-center items-center relative overflow-hidden"
             >
                 <img
                     src="./img/chess-bg.png"
@@ -44,7 +61,7 @@
                 </div>
 
                 <div
-                    class="absolute translate-y-9 uppercase font-[Montserrat] no-underline text-white transition-all duration-200 ease-in-out opacity-100 group-hover:opacity-0"
+                    class="absolute translate-y-9 uppercase font-[Montserrat] no-underline text-primary transition-all duration-200 ease-in-out opacity-100 group-hover:opacity-0"
                 >
                     chess
                 </div>
@@ -53,7 +70,7 @@
             <a
                 target="_blank"
                 href="https://music.youtube.com"
-                class="group border-2 border-solid border-[#393939] p-2 rounded-2xl flex justify-center items-center relative overflow-hidden"
+                class="group border-2 border-solid border-border-grey p-2 rounded-2xl flex justify-center items-center relative overflow-hidden"
             >
                 <img
                     src="./img/yt-music-bg.png"
@@ -70,7 +87,7 @@
                 </div>
 
                 <div
-                    class="absolute translate-y-9 uppercase font-[Montserrat] no-underline text-white transition-all duration-200 ease-in-out opacity-100 group-hover:opacity-0"
+                    class="absolute translate-y-9 uppercase font-[Montserrat] no-underline text-primary transition-all duration-200 ease-in-out opacity-100 group-hover:opacity-0"
                 >
                     youtube music
                 </div>
@@ -84,7 +101,7 @@
         >
             <div class="h-12 flex gap-1 justify-stretch overflow-hidden">
                 <div
-                    class="aspect-square grid rounded place-items-center bg-[#2e2c35]"
+                    class="aspect-square grid rounded place-items-center bg-light-grey"
                 >
                     <img
                         class="w-6 aspect-square"
@@ -96,11 +113,11 @@
                         type="text"
                         name="search"
                         id="main-search"
-                        class="h-12 outline-none border-none w-full bg-[#2e2c35] rounded-tl rounded-bl text-white text-xl p-4 font-[REM] placeholder:text-[#ffffff4d] placeholder:font-[REM]"
+                        class="h-12 outline-none border-none w-full bg-light-grey rounded-tl rounded-bl text-primary text-xl p-4 font-[REM] placeholder:text-secondary placeholder:font-[REM]"
                         placeholder="search anything"
                     />
                     <div
-                        class="w-20 bg-[#2e2c35] rounded-br rounded-tr before:content-['URL'] before:text-[#ffffff9c] before:font-semibold before:flex before:justify-center before:items-center before:font-[Montserrat] relative before:absolute before:-left-1/2 before:top-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:bg-blue-950 before:rounded-lg before:py-1 before:px-2"
+                        class="w-20 bg-light-grey rounded-br rounded-tr before:content-['URL'] before:text-gray-400 before:font-semibold before:flex before:justify-center before:items-center before:font-[Montserrat] relative before:absolute before:-left-1/2 before:top-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:bg-blue-950 before:rounded-lg before:py-1 before:px-2"
                     >
                         <input
                             type="checkbox"
@@ -112,22 +129,20 @@
 
                         <label
                             for="url-toggle"
-                            class="uppercase cursor-pointer text-white select-none relative font-[Montserrat] before:absolute before:-left-[0.625rem] before:top-[0.0625rem] before:h-10 before:w-20 before:rounded-xl before:bg-slate-700 before:border-2 before:border-solid before:border-slate-800 after:absolute after:-left-[0.25rem] after:top-[7px] after:h-7 after:w-8 after:rounded-lg after:bg-red-500 after:transition-all after:duration-300 after:ease-in-out peer-checked:after:bg-green-500 peer-checked:after:left-0 peer-checked:after:translate-x-full"
+                            class="uppercase cursor-pointer text-primary select-none relative font-[Montserrat] before:absolute before:-left-[0.625rem] before:top-[0.0625rem] before:h-10 before:w-20 before:rounded-xl before:bg-slate-700 before:border-2 before:border-solid before:border-slate-800 after:absolute after:-left-[0.25rem] after:top-[7px] after:h-7 after:w-8 after:rounded-lg after:bg-red-500 after:transition-all after:duration-300 after:ease-in-out peer-checked:after:bg-green-500 peer-checked:after:left-0 peer-checked:after:translate-x-full"
                         ></label>
                     </div>
                 </div>
             </div>
 
-            <div
-                class="grid gap-1 grid-cols-4 text-white font-[REM]"
-            >
+            <div class="grid gap-1 grid-cols-4 text-primary font-[REM]">
                 <a
                     target="_blank"
-                    class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
+                    class="flex p-2 justify-start rounded gap-2 items-center bg-light-grey cursor-pointer transition-all ease-in-out duration-100 no-underline text-primary hover:bg-light-grey-hover"
                     href="https://web.whatsapp.com"
                 >
                     <div
-                        class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                        class="grid place-items-center p-1 border-2 border-solid border-secondary rounded-2xl"
                     >
                         <img
                             class="w-10 aspect-square rounded-xl"
@@ -137,16 +152,16 @@
 
                     <div>
                         <div>Whatsapp Web</div>
-                        <div class="text-[#ffffff49]">web.whatsapp.com</div>
+                        <div class="text-secondary">web.whatsapp.com</div>
                     </div>
                 </a>
                 <a
                     target="_blank"
-                    class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
+                    class="flex p-2 justify-start rounded gap-2 items-center bg-light-grey cursor-pointer transition-all ease-in-out duration-100 no-underline text-primary hover:bg-light-grey-hover"
                     href="https://www.youtube.com/"
                 >
                     <div
-                        class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                        class="grid place-items-center p-1 border-2 border-solid border-secondary rounded-2xl"
                     >
                         <img
                             class="w-10 aspect-square rounded-xl"
@@ -156,16 +171,16 @@
 
                     <div>
                         <div>YouTube</div>
-                        <div class="text-[#ffffff49]">youtube.com</div>
+                        <div class="text-secondary">youtube.com</div>
                     </div>
                 </a>
                 <a
                     target="_blank"
-                    class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
+                    class="flex p-2 justify-start rounded gap-2 items-center bg-light-grey cursor-pointer transition-all ease-in-out duration-100 no-underline text-primary hover:bg-light-grey-hover"
                     href="https://www.discord.com/app"
                 >
                     <div
-                        class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                        class="grid place-items-center p-1 border-2 border-solid border-secondary rounded-2xl"
                     >
                         <img
                             class="w-10 aspect-square rounded-xl"
@@ -175,16 +190,16 @@
 
                     <div>
                         <div>Discord</div>
-                        <div class="text-[#ffffff49]">discord.com/app</div>
+                        <div class="text-secondary">discord.com/app</div>
                     </div>
                 </a>
                 <a
                     target="_blank"
-                    class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
+                    class="flex p-2 justify-start rounded gap-2 items-center bg-light-grey cursor-pointer transition-all ease-in-out duration-100 no-underline text-primary hover:bg-light-grey-hover"
                     href="https://www.github.com/"
                 >
                     <div
-                        class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                        class="grid place-items-center p-1 border-2 border-solid border-secondary rounded-2xl"
                     >
                         <img
                             class="w-10 aspect-square rounded-xl"
@@ -194,16 +209,16 @@
 
                     <div>
                         <div>GitHub</div>
-                        <div class="text-[#ffffff49]">github.com</div>
+                        <div class="text-secondary">github.com</div>
                     </div>
                 </a>
                 <a
                     target="_blank"
-                    class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
+                    class="flex p-2 justify-start rounded gap-2 items-center bg-light-grey cursor-pointer transition-all ease-in-out duration-100 no-underline text-primary hover:bg-light-grey-hover"
                     href="https://www.codepen.io"
                 >
                     <div
-                        class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                        class="grid place-items-center p-1 border-2 border-solid border-secondary rounded-2xl"
                     >
                         <img
                             class="w-10 aspect-square rounded-xl"
@@ -213,16 +228,16 @@
 
                     <div>
                         <div>CodePen</div>
-                        <div class="text-[#ffffff49]">codepen.io</div>
+                        <div class="text-secondary">codepen.io</div>
                     </div>
                 </a>
                 <a
                     target="_blank"
-                    class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
+                    class="flex p-2 justify-start rounded gap-2 items-center bg-light-grey cursor-pointer transition-all ease-in-out duration-100 no-underline text-primary hover:bg-light-grey-hover"
                     href="https://www.gmail.com/"
                 >
                     <div
-                        class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                        class="grid place-items-center p-1 border-2 border-solid border-secondary rounded-2xl"
                     >
                         <img
                             class="w-10 aspect-square rounded-xl"
@@ -232,16 +247,16 @@
 
                     <div>
                         <div>GMail</div>
-                        <div class="text-[#ffffff49]">gmail.com</div>
+                        <div class="text-secondary">gmail.com</div>
                     </div>
                 </a>
                 <a
                     target="_blank"
-                    class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
+                    class="flex p-2 justify-start rounded gap-2 items-center bg-light-grey cursor-pointer transition-all ease-in-out duration-100 no-underline text-primary hover:bg-light-grey-hover"
                     href="https://open.spotify.com/"
                 >
                     <div
-                        class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                        class="grid place-items-center p-1 border-2 border-solid border-secondary rounded-2xl"
                     >
                         <img
                             class="w-10 aspect-square rounded-xl"
@@ -251,16 +266,16 @@
 
                     <div>
                         <div>Spotify</div>
-                        <div class="text-[#ffffff49]">open.spotify.com</div>
+                        <div class="text-secondary">open.spotify.com</div>
                     </div>
                 </a>
                 <a
                     target="_blank"
-                    class="flex p-2 justify-start rounded gap-2 items-center bg-[#2e2c35] cursor-pointer transition-all ease-in-out duration-100 no-underline text-white hover:bg-[#393642]"
+                    class="flex p-2 justify-start rounded gap-2 items-center bg-light-grey cursor-pointer transition-all ease-in-out duration-100 no-underline text-primary hover:bg-light-grey-hover"
                     href="https://www.notion.so/"
                 >
                     <div
-                        class="grid place-items-center p-1 border-2 border-solid border-[#ffffff49] rounded-2xl"
+                        class="grid place-items-center p-1 border-2 border-solid border-secondary rounded-2xl"
                     >
                         <img
                             class="w-10 aspect-square rounded-xl"
@@ -270,7 +285,7 @@
 
                     <div>
                         <div>Notion</div>
-                        <div class="text-[#ffffff49]">notion.so</div>
+                        <div class="text-secondary">notion.so</div>
                     </div>
                 </a>
             </div>
@@ -289,7 +304,7 @@
 
                 <label
                     for="24hr-toggle"
-                    class="uppercase cursor-pointer text-white select-none relative font-[Montserrat] before:absolute before:left-full before:-top-2 before:h-10 before:w-20 before:translate-x-5 before:rounded-full before:bg-slate-700 before:border-2 before:border-solid before:border-slate-800 after:absolute after:left-full after:-top-1 after:h-8 after:w-9 after:translate-x-6 after:rounded-full after:bg-red-500 after:transition-all after:duration-300 after:ease-in-out peer-checked:after:bg-green-500 peer-checked:after:translate-x-[3.75rem]"
+                    class="uppercase cursor-pointer text-primary select-none relative font-[Montserrat] before:absolute before:left-full before:-top-2 before:h-10 before:w-20 before:translate-x-5 before:rounded-full before:bg-slate-700 before:border-2 before:border-solid before:border-slate-800 after:absolute after:left-full after:-top-1 after:h-8 after:w-9 after:translate-x-6 after:rounded-full after:bg-red-500 after:transition-all after:duration-300 after:ease-in-out peer-checked:after:bg-green-500 peer-checked:after:translate-x-[3.75rem]"
                     >24 hour format</label
                 >
             </div>
@@ -299,21 +314,23 @@
             >
                 <canvas id="clock" class="col-span-3"></canvas>
 
-                <div class="flex text-gray-500 text-7xl col-span-6">
+                <div class="flex text-gray-500 text-7xl col-span-6 select-none">
                     <span
                         id="hours"
-                        class="w-20 mx-3 bg-gradient-to-b from-blue-400 to-blue-600 bg-clip-text text-transparent font-semibold text-7xl"
-                        >08</span
+                        data-hour-24="00"
+                        data-hour-12="12"
+                        class="h-[70px] overflow-hidden text-transparent flex justify-center items-center relative before:content-[attr(data-hour-12)] before:transition-all before:duration-500 before:ease-in-out before:text-transparent before:absolute before:top-0 before:left-0 before:w-20 before:bg-gradient-to-b before:from-blue-400 before:to-blue-600 before:bg-clip-text after:content-[attr(data-hour-24)] after:transition-all after:duration-500 after:ease-in-out after:text-transparent after:absolute after:top-0 after:left-0 after:translate-y-20 after:w-20 after:bg-gradient-to-b after:from-blue-400 after:to-blue-600 after:bg-clip-text w-20 mx-3 font-semibold text-7xl"
+                        >00</span
                     >:
                     <span
                         id="minutes"
                         class="w-20 mx-3 bg-gradient-to-b from-orange-400 to-orange-600 bg-clip-text text-transparent font-semibold text-7xl"
-                        >35</span
+                        >00</span
                     >:
                     <span
                         id="seconds"
                         class="w-20 mx-3 bg-gradient-to-b from-pink-400 to-pink-600 bg-clip-text text-transparent font-semibold text-7xl"
-                        >23</span
+                        >00</span
                     ><span
                         id="am_pm"
                         class="transition-all duration-200 ease-in-out w-max px-3 bg-gradient-to-b from-emerald-400 to-emerald-600 bg-clip-text text-transparent font-semibold text-7xl"
