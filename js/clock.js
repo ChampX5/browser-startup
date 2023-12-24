@@ -8,33 +8,34 @@ minutesElement = document.getElementById('minutes');
 secondsElement = document.getElementById('seconds');
 AM_PM = document.getElementById('am_pm');
 
-// automatically adapts to default state
-if (formatInput.checked) {
-    AM_PM.classList.remove('opacity-100');
-    AM_PM.classList.add('opacity-0', 'pointer-events-none');
-
-    hoursElement.classList.toggle('after:translate-y-20');
-} else {
-    AM_PM.classList.remove('opacity-0', 'pointer-events-none');
-    AM_PM.classList.add('opacity-100');
-
-    hoursElement.classList.toggle('before:-translate-y-20');
-}
-// automatically adapts to default state
-
-formatInput.addEventListener('change', () => {
-    // check for checkbox
+function setup() {
+    // automatically adapts to default state
     if (formatInput.checked) {
         AM_PM.classList.remove('opacity-100');
         AM_PM.classList.add('opacity-0', 'pointer-events-none');
+
+        hoursElement.classList.toggle('after:translate-y-20');
     } else {
         AM_PM.classList.remove('opacity-0', 'pointer-events-none');
         AM_PM.classList.add('opacity-100');
+
+        hoursElement.classList.toggle('before:-translate-y-20');
     }
 
-    hoursElement.classList.toggle('before:-translate-y-20');
-    hoursElement.classList.toggle('after:translate-y-20');
-});
+    formatInput.addEventListener('change', () => {
+        // check for checkbox
+        if (formatInput.checked) {
+            AM_PM.classList.remove('opacity-100');
+            AM_PM.classList.add('opacity-0', 'pointer-events-none');
+        } else {
+            AM_PM.classList.remove('opacity-0', 'pointer-events-none');
+            AM_PM.classList.add('opacity-100');
+        }
+    
+        hoursElement.classList.toggle('before:-translate-y-20');
+        hoursElement.classList.toggle('after:translate-y-20');
+    });
+}
 
 function reset() {
     clockCanvas.width = 200;
@@ -186,4 +187,5 @@ function updateTime(date) {
     secondsElement.innerHTML = seconds;
 }
 
+setup();
 update();
