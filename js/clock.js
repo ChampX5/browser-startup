@@ -8,13 +8,17 @@ minutesElement = document.getElementById('minutes');
 secondsElement = document.getElementById('seconds');
 AM_PM = document.getElementById('am_pm');
 
-// check for checkbox
+// automatically adapts to default state
 if (formatInput.checked) {
     AM_PM.classList.remove('opacity-100');
     AM_PM.classList.add('opacity-0', 'pointer-events-none');
+
+    hoursElement.classList.toggle('after:translate-y-20');
 } else {
     AM_PM.classList.remove('opacity-0', 'pointer-events-none');
     AM_PM.classList.add('opacity-100');
+
+    hoursElement.classList.toggle('before:-translate-y-20');
 }
 // automatically adapts to default state
 
