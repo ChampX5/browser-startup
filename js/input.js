@@ -1,7 +1,7 @@
 function buildURL(string) {
     return isUrl
         ? 'https://' + encodeURIComponent(string)
-        : 'https://www.google.com/search?q=' + encodeURIComponent(string);
+        : 'https://www.google.com/search?q=' + string;
 }
 
 const isUrlInput = document.getElementById('url-toggle');
@@ -9,7 +9,12 @@ let isUrl = true;
 
 isUrlInput.addEventListener('change', () => {
     isUrl = isUrlInput.checked;
-    console.log(isUrl);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    inputBox.focus({
+        preventScroll: false
+    });
 });
 
 const inputBox = document.getElementById('main-search');
