@@ -1,6 +1,6 @@
 function buildURL(string) {
     return isUrl
-        ? 'https://' + encodeURIComponent(string)
+        ? 'https://' + string
         : 'https://www.google.com/search?q=' + string;
 }
 
@@ -23,6 +23,7 @@ inputBox.addEventListener('keyup', ({ key }) => {
     if (key === 'Enter') {
         const input = inputBox.value;
         const url = buildURL(input);
+        inputBox.value = '';
         window.open(url);
     }
 });
