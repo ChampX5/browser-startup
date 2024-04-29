@@ -24,6 +24,6 @@ inputBox.addEventListener('keyup', ({ key }) => {
         const input = inputBox.value;
         const url = buildURL(input);
         inputBox.value = '';
-        window.open(url);
+        window.location = url;
     }
 });
