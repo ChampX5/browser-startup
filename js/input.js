@@ -23,7 +23,10 @@ inputBox.addEventListener('keyup', ({ key }) => {
     if (key === 'Enter') {
         const input = inputBox.value;
         const url = buildURL(input);
-        inputBox.value = '';
         window.location = url;
+    }
+
+    if (key === 'u') {
+        isUrlInput.click();
     }
 });
