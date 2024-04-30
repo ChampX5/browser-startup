@@ -26,7 +26,7 @@ inputBox.addEventListener('keyup', ({ key }) => {
         window.location.replace(url);
     }
 
-    if (key === 'u') {
+    if (key === 'u' && document.activeElement.id !== inputBox.id) {
         isUrlInput.click();
     }
 });
