@@ -1,0 +1,13 @@
+🚨 SOLARIS LOCKDOWN CRITICAL OVERRIDE
+
+ATTENTION: FIELD AGENTS.
+SOL-1 has detected an immediate, non-Shield related threat, likely an internal attack using the Solaris Protocol.
+THREAT SIGNAL: TEXT {CITY-7848}
+PRIMARY TARGET:
+The City of Pearls. A technological fortress built on ancient ground. Imminent grid collapse detected.
+DIRECTIVE:
+The attack hinges on the precise longitudinal coordinates of the targeted grid. These numbers are encrypted within this operational space.
+Find the coordinates to unmask the city's location and provide the necessary neutralization key.
+Neutralize this surge, and Box 1 will open.
+
+You found the East/West key to crack the lock of steel, but a different direction holds the secrets you must reveal.
