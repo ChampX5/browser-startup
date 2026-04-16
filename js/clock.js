@@ -179,7 +179,7 @@ function updateTime(date) {
     if (minutes < 10) minutes = `0${minutes}`;
     if (seconds < 10) seconds = `0${seconds}`;
 
-    AM_PM.innerHTML = hours24 > 12 ? 'PM' : 'AM';
+    AM_PM.innerHTML = hours24 >= 12 ? 'PM' : 'AM';
 
     hoursElement.setAttribute('data-hour-24', hours24.toString());
     hoursElement.setAttribute('data-hour-12', hours12.toString());
